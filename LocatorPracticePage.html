@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selenium Practice | TestZen AI</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="LocatorPracticePage.html">Practice Page</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="demo.html">Demo</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Selenium Locator Practice</h1>
+
+    <!-- Registration Form -->
+    <div class="form-section">
+        <h2>Registration</h2>
+        <form id="register-form">
+            <div class="form-group">
+                <label for="reg-username">Username:</label>
+                <input type="text" id="reg-username" required>
+            </div>
+            <div class="form-group">
+                <label for="reg-email">Email:</label>
+                <input type="email" id="reg-email" required>
+            </div>
+            <div class="form-group">
+                <label for="reg-password">Password:</label>
+                <input type="password" id="reg-password" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country">
+                    <option value="canada">Canada</option>
+                    <option value="india">India</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                </select>
+            </div>
+            <button type="submit" id="register-btn">Register</button>
+        </form>
+    </div>
+
+    <!-- Login Form -->
+    <div class="form-section">
+        <h2>Login</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit" id="login-btn">Login</button>
+            <p id="error-msg" class="error"></p>
+        </form>
+    </div>
+
+    <!-- Products Page (Hidden Initially) -->
+    <div id="products-page" style="display:none;">
+        <h2>Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="images/product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$19.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$29.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Tab Example -->
+    <div class="new-tab-section">
+        <button id="new-tab-btn">Open TestZen AI in New Tab</button>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; Vineet Kumar @ 2025 | TestZen AI</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
